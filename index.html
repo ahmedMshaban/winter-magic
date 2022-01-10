@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- head section all external style-sheets scripts title of the page and meta tags  -->
+    <!-- meta charset defines the character set for the page -->
     <meta charset="UTF-8" />
+    <!-- meta http-equiv="X-UA-Compatible" content="IE=edge" defines compatibility the page with internet explorer IE-edge means IE Edge Version -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta viewport defines responsiveness of the page on different devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title OF  The Page-->
     <title>Winter Magic</title>
   </head>
+  <!-- Body Section Start Which Contains All the content we can see on the browser -->
   <body>
+    <!--Header Tag is used to define the header of the page-->
     <header>
       <!--Above header-->
       <div>
+        <!--Div Means Division div tags can divide the page into multiple parts accordingly-->
         <!--Content container-->
         <div>
+          <!--p tag means paragraph-->
           <p>Where Everyday is a Great Adventure.</p>
+          <!--a is used to add links in the page href means hyper reference to the page tel: defines that its linking a phone number-->
           <p>Call Us: <a href="tel:+999999999">999999999</a></p>
         </div>
       </div>
@@ -21,57 +31,81 @@
       <div>
         <!--Content container-->
         <div>
-          <a href="/"><img src="/assets/images/LogoWhite.png" alt="Winter Magic" /></a>
-
+          <!--./ in href means the directory where file is placed 
+			/ means the parent directory e.g. 
+			if our project placed in C:/mywork/html/project/
+			./ will be directed to C:/mywork/html/project/
+			/ will be directed to C:/
+		-->
+          <a href="./">
+            <!-- img tag is used add images in the web page alt tag is the text about the image which can be very helpful for search engines -->
+            <img
+              src="./assets/images/LogoWhite.png"
+              alt="Winter Magic Theme Park Logo"
+            />
+          </a>
+          <!-- nav tag is used to add navigations -->
           <nav>
+            <!-- ul is un-ordered list all the items will start with bullets (default / custom) -->
             <ul>
+              <!-- li is list item inside list item we can put text / links -->
               <li><a href="./index.html">Home</a></li>
               <li><a href="./experiences.html">Experiences</a></li>
               <li><a href="./help.html">Help</a></li>
+              <!-- a link with # means this link is target specific part of the page -->
               <li><a href="#tickets">Book Now</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
-
+    <!-- main tag reefers to the main content of the page  -->
     <main>
-      <!-- Hero banner -->
+      <!-- section tag defines section in a web page -->
       <section>
-        <!--Content container-->
         <div>
+          <!-- h1 tag is big heading there are other headings too from h1 .... h6  -->
           <h1>Make Plans For 2022</h1>
+          <!--p tag means paragraph-->
           <p>
-            Come explore new adventures. 
-            Discover a world of surprises. 
-            And create memories you will remember forever.
+            Come explore new adventures. Discover a world of surprises. And
+            create memories you will remember forever.
           </p>
+          <!-- a link with # means this link is target specific part of the page -->
           <a href="#tickets">Book Now</a>
         </div>
       </section>
 
       <section>
-        <!--Content container-->
+        <!-- section tag defines section in a web page -->
         <div>
+          <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
           <h2>A Year-Round Winter Wonderland</h2>
+          <!--p tag means paragraph-->
           <p>
-            The spirit of winter shines bright all year round in Winter Magic, 
-            Singapore's first ever winter wonderland theme park. 
+            The spirit of winter shines bright all year round in Winter Magic,
+            Singapore's first ever winter wonderland theme park.
           </p>
         </div>
       </section>
 
       <section>
-        <!--Content container-->
+        <!-- section tag defines section in a web page -->
         <div>
+          <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
+          <!-- id can be assigned to any tag id is always unique for each item -->
           <h2 id="tickets">Start Your Journey Now</h2>
+          <!--p tag means paragraph-->
           <p>
-            Customize your adventure with the benefits that work best for you! 
+            Customize your adventure with the benefits that work best for you!
           </p>
           <!--Prices container-->
           <div>
+            <!-- article tag is used to add content in the section/page -->
             <article>
+              <!-- h3 tag is heading -->
               <h3>Day Tickets</h3>
+              <!-- span tag is inline container  -->
               <p>Per Person: <span>$30</span></p>
               <ul>
                 <li>Includes loads of festive fun</li>
@@ -111,15 +145,18 @@
         <!--Content container-->
         <div>
           <div>
+            <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
             <h2>Ice Themed Worlds For All Ages!</h2>
+            <!--p tag means paragraph-->
             <p>
-              Explore architectural marvels made entirely of snow and finish your tour at the Ice Bar 
-              with a delicious drinks served in a glass made of ice.
+              Explore architectural marvels made entirely of snow and finish
+              your tour at the Ice Bar with a delicious drinks served in a glass
+              made of ice.
             </p>
             <a href="./experiences.html">Experience</a>
           </div>
           <div>
-            <img src="/assets/images/6.-Ice-hotel.jpg" alt="" />
+            <img src="./assets/images/6.-Ice-hotel.jpg" alt="" />
           </div>
         </div>
       </section>
@@ -130,13 +167,17 @@
           <div>
             <h2>Plan Your Visit Now</h2>
             <p>
-              Whatever the season, there is an extraordinary experience awaiting anyone who visits. 
-              A new set of treasured memories are waiting to unfold.
+              Whatever the season, there is an extraordinary experience awaiting
+              anyone who visits. A new set of treasured memories are waiting to
+              unfold.
             </p>
             <a href="./experiences.html">More</a>
           </div>
           <div>
-            <img src="/assets/images/3.-Ice-hotel.jpg" alt="" />
+            <img
+              src="./assets/images/3.-Ice-hotel.jpg"
+              alt="Ice Hotel In Theme Park"
+            />
           </div>
         </div>
       </section>
@@ -147,12 +188,18 @@
           <div>
             <h2>Exclusive Excess</h2>
             <p>
-              Discover Winter Magic with your very own VIP Guide. 
-              Enjoy a personalised visit filled with special perks and privileged access.
-            <a href="./experiences.html">Find Out More</a>
+              Discover Winter Magic with your very own VIP Guide. Enjoy a
+              personalised visit filled with special perks and privileged
+              access.
+              <a href="./experiences.html">Find Out More</a>
+            </p>
           </div>
+
           <div>
-            <img src="/assets/images/1.-Ice-hotel.jpg" alt="" />
+            <img
+              src="./assets/images/1.-Ice-hotel.jpg"
+              alt="Theme Park Ice Hotel"
+            />
           </div>
         </div>
       </section>
@@ -163,43 +210,65 @@
           <div>
             <h2>Sign up to our newsletter</h2>
             <p>
-              Get latest news and updates on Winter Magic by subscribing to our newsletter. 
+              Get latest news and updates on Winter Magic by subscribing to our
+              newsletter.
             </p>
           </div>
           <div>
+            <!--form tag is used to get data from user-->
             <form>
+              <!-- Label is used to show labels with inputs -->
               <label for="email">Email</label>
+              <!-- Input Tag is used to create a input box on the page 
+				input can be of different types e.g. 
+				number : accept only numbers
+				text   : accept all text 
+				email  : accept email address only 
+				password : show * instead of characters 
+				url    : accept only URLs -->
               <input id="email" type="email" name="email" />
+              <!-- 
+				Button Tags are used to create a button on page
+				it can be of different types
+				submit : to submit form data 
+				clear : to clear all the form data 
+				button : a general button
+			  -->
               <button type="submit">Sign Up</button>
             </form>
           </div>
         </div>
       </section>
     </main>
-
+    <!-- Footer Section is the last and at the bottom of the pages -->
     <footer>
       <!--Content container-->
       <div>
         <div>
           <h2>Stay Connected</h2>
+          <!-- nav tag is used to add navigations -->
           <nav>
             <ul>
               <li>
+                <!-- Social Media Link to Facebook -->
                 <a href="#"
                   ><img src="assets/images/facebook.svg" alt="Facebook"
                 /></a>
               </li>
               <li>
+                <!-- Social Media Link to Youtube -->
                 <a href="#"
                   ><img src="assets/images/youtube.svg" alt="Youtube"
                 /></a>
               </li>
               <li>
+                <!-- Social Media Link to Instagram -->
                 <a href="#"
                   ><img src="assets/images/instagram.svg" alt="Instagram"
                 /></a>
               </li>
               <li>
+                <!-- Social Media Link to Twitter -->
                 <a href="#"
                   ><img src="assets/images/twitter.svg" alt="Twitter"
                 /></a>
@@ -209,14 +278,20 @@
         </div>
 
         <div>
-          <a href="/"><img src="/assets/images/LogoWhite.png" alt="Winter Magic" /></a>
+          <a href="/"
+            ><img
+              src="./assets/images/LogoWhite.png"
+              alt="Winter Magic Theme Park Logo"
+          /></a>
           <nav>
+            <!-- Footer Navigation -->
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./experiences.html">Experiences</a></li>
               <li><a href="./help.html">Help</a></li>
             </ul>
           </nav>
+          <!-- Copyrights text -->
           <p>© 2021 Company, Inc</p>
         </div>
 
@@ -229,5 +304,8 @@
         </div>
       </div>
     </footer>
+    <!-- End of footer -->
   </body>
+  <!-- end of body -->
 </html>
+<!-- End Of The Page -->
