@@ -1,0 +1,288 @@
+/* 
+    CSS reset
+    The goal of a reset is to reduce browser inconsistencies in 
+    things like default line heights, margins and font sizes of headings, 
+    and so on.
+    http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 17px;
+  font-size: 1rem;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1.6;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 
+    Global
+*/
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6,
+body a {
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wm-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1240px;
+}
+
+.wm-grid-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  grid-column-gap: 20px;
+  overflow-wrap: anywhere;
+}
+/* 
+    Header
+*/
+.wm-above-header-wrap {
+  background: #f2f2f2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.wm-above-header-wrap .contact {
+  text-align: right;
+}
+
+.wm-above-header-wrap .contact a {
+  text-decoration: none;
+}
+
+.wm-main-header-wrap {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px;
+}
+
+.wm-main-header-wrap .wm-logo {
+  height: 70px;
+}
+
+.wm-main-nav ul {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.wm-main-nav li {
+  line-height: 70px;
+}
+
+.wm-main-nav a {
+  text-decoration: none;
+  padding: 0 1em;
+  height: 100%;
+  line-height: 70px;
+  display: inline-block;
+}
+
+.wm-main-nav .button {
+  border: 1px solid #000;
+  line-height: 40px;
+  border-radius: 4px;
+}
+
+.wm-main-nav .toggle-icon {
+  line-height: 0;
+  padding-right: 0;
+}
+
+.wm-main-nav .toggle-icon img {
+  width: 15px;
+  background: #f2f2f2;
+  padding: 14px 16px;
+  border-radius: 4px;
+}
+
+.wm-mobile-menu,
+.wm-main-nav .toggle-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .wm-above-header-wrap .wm-grid-row {
+    grid-template-columns: auto;
+  }
+
+  .wm-above-header-wrap .contact,
+  .wm-above-header-wrap .tag-line  {
+    text-align: center;
+  }
+
+  .wm-main-header-wrap .wm-logo {
+    height: 50px;
+  }
+
+  .wm-desktop-menu .wm-main-nav li {
+    display: none;
+  }
+
+  .wm-mobile-menu.responsive,
+  .wm-main-nav .toggle-icon {
+    display: block;
+  }
+
+  .wm-mobile-menu.responsive .wm-main-nav-container {
+    background: #f2f2f2;
+    margin-top: -10px;
+  }
+
+  .wm-mobile-menu.responsive .wm-main-nav-container li {
+    width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+  }
+
+  .wm-mobile-menu.responsive .wm-main-nav-container li a {
+    width: 100%;
+  }
+
+  .wm-mobile-menu.responsive .wm-main-nav-container li .button {
+    width: auto;
+    margin-left: 1em;
+  }
+}
