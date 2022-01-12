@@ -10,6 +10,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Title OF  The Page-->
     <title>Winter Magic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <!-- Body Section Start Which Contains All the content we can see on the browser -->
@@ -238,38 +244,45 @@
         </div>
       </section>
 
-      <section>
+      <section class="wm-signup-container">
         <!--Content container-->
-        <div>
-          <div>
-            <h2>Sign up to our newsletter</h2>
-            <p>
-              Get latest news and updates on Winter Magic by subscribing to our
-              newsletter.
-            </p>
-          </div>
-          <div>
-            <!--form tag is used to get data from user-->
-            <form>
-              <!-- Label is used to show labels with inputs -->
-              <label for="email">Email</label>
-              <!-- Input Tag is used to create a input box on the page 
+        <div class="wm-container">
+          <div class="wm-grid-row">
+            <div>
+              <h2>Sign up to our newsletter</h2>
+              <p>
+                Get latest news and updates on Winter Magic by subscribing to
+                our newsletter.
+              </p>
+            </div>
+            <div class="form-container">
+              <!--form tag is used to get data from user-->
+              <form>
+                <!-- Label is used to show labels with inputs -->
+                <label for="email">Email</label>
+                <!-- Input Tag is used to create a input box on the page 
 				input can be of different types e.g. 
 				number : accept only numbers
 				text   : accept all text 
 				email  : accept email address only 
 				password : show * instead of characters 
 				url    : accept only URLs -->
-              <input id="email" type="email" name="email" />
-              <!-- 
+                <input
+                  id="email"
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                />
+                <!-- 
 				Button Tags are used to create a button on page
 				it can be of different types
 				submit : to submit form data 
 				clear : to clear all the form data 
 				button : a general button
 			  -->
-              <button type="submit">Sign Up</button>
-            </form>
+                <button type="submit">Sign Up</button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -342,7 +355,7 @@
       </div>
     </footer>
     <!-- End of footer -->
-    
+
     <script src="assets/scripts/index.js"></script>
   </body>
   <!-- end of body -->

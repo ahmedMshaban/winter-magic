@@ -7,6 +7,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+html {
+  font-size: 62.5%;
+}
+
 html,
 body,
 div,
@@ -91,8 +95,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 17px;
-  font-size: 1rem;
+  font-size: 1.4rem;
   font: inherit;
   vertical-align: baseline;
 }
@@ -136,15 +139,33 @@ table {
 /* 
     Global
 */
-body p,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body h6,
-body a {
+body {
+  font-family: "Roboto", sans-serif;
   color: #000;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+a {
+  color: #000;
+}
+
+body p,
+body a {
+  font-size: 1.25rem;
+}
+
+body h2 {
+  font-size: 2.5rem;
 }
 
 img {
@@ -245,6 +266,56 @@ img {
 }
 
 /* 
+    Newsletter
+*/
+.wm-signup-container {
+  background: #f2f2f2;
+  padding: 60px 0;
+}
+
+.wm-signup-container .wm-grid-row {
+  grid-template-columns: 50% auto;
+}
+
+.wm-signup-container label {
+  display: none;
+}
+
+.wm-signup-container input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+input:focus {
+  background-color: lightblue;
+}
+
+.wm-signup-container button {
+  padding: 12px 20px;
+  background: #000000;
+  border-radius: 5px;
+  color: #fff;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.wm-signup-container button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.wm-signup-container form {
+  width: 400px;
+  margin-left: auto;
+}
+
+/* 
     Footer
 */
 footer {
@@ -258,16 +329,17 @@ footer a {
 
 footer .wm-grid-row-3 {
   display: grid;
-  grid-template-columns: 200px auto 320px;
+  grid-template-columns: 240px auto 360px;
   align-items: center;
   grid-column-gap: 20px;
   overflow-wrap: anywhere;
 }
 
 footer .social-container h2 {
-  font-size: 16px;
+  font-size: 1.25rem;
   color: rgba(0, 0, 0, 0.49);
   margin-bottom: 10px;
+  font-weight: normal;
 }
 
 footer .social-container nav {
@@ -341,7 +413,7 @@ footer .copyrights-container ul {
 
 footer .contact-container p {
   color: rgba(0, 0, 0, 0.49);
-  font-size: 16px;
+  font-size: 1.25rem;
   margin-bottom: 10px;
 }
 
@@ -396,6 +468,19 @@ footer .contact-container a:hover {
   .wm-mobile-menu.responsive .wm-main-nav-container li .button {
     width: auto;
     margin-left: 1em;
+  }
+
+  .wm-signup-container .wm-grid-row {
+    grid-template-columns: auto;
+  }
+
+  .wm-signup-container {
+    padding: 30px 0 40px;
+  }
+
+  .wm-signup-container form {
+    margin-right: auto;
+    margin-top: 30px;
   }
 
   footer .wm-grid-row-3 {
