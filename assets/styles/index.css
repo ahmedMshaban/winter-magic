@@ -164,6 +164,10 @@ body a {
   font-size: 1.25rem;
 }
 
+.wm-banner h1 {
+  font-size: 3.5rem;
+}
+
 body h2 {
   font-size: 2.5rem;
 }
@@ -294,10 +298,6 @@ img {
   background: url(/assets/images/8.-Ice-rink.jpg);
   background-size: cover;
   background-position: center bottom;
-}
-
-.home .wm-banner h1 {
-  font-size: 3.5rem;
 }
 
 .home .wm-banner p {
@@ -498,6 +498,94 @@ input:focus {
   margin-left: auto;
 }
 
+
+/* 
+    Experiences - Banner
+*/
+.experiences .wm-banner {
+  background: #F2F2F2;
+  text-align: center;
+  padding: 4% 0 5%;
+}
+
+.experiences .wm-banner p {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+    Experiences - attractions
+*/
+.wm-attractions-container img {
+  border-radius: 20px;
+}
+
+.wm-attractions-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-attractions-container .wm-info-box {
+  padding-left: 10%;
+}
+
+/* 
+    Experiences - discover
+*/
+.wm-discover-container {
+  background-color: #f2f2f2;
+}
+
+.wm-discover-container img {
+  border-radius: 20px;
+}
+
+.wm-discover-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-discover-container .wm-info-box {
+  padding-right: 10%;
+}
+
+/* 
+    Experiences - delightful
+*/
+.wm-delightful-container img {
+  border-radius: 20px;
+}
+
+.wm-delightful-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-delightful-container .wm-info-box {
+  padding-left: 10%;
+}
+
+/* 
+    Experiences - staycation
+*/
+.wm-staycation-container {
+  background-color: #f2f2f2;
+}
+
+.wm-staycation-container img {
+  border-radius: 20px;
+}
+
+.wm-staycation-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-staycation-container .wm-info-box {
+  padding-right: 10%;
+}
+
 /* 
     Footer
 */
@@ -657,7 +745,11 @@ footer .contact-container a:hover {
   .wm-plan-container,
   .wm-exclusive-container,
   .wm-year-round-container,
-  .wm-start-Journey-container  {
+  .wm-start-Journey-container,
+  .wm-staycation-container,
+  .wm-attractions-container,
+  .wm-delightful-container,
+  .wm-discover-container  {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -668,17 +760,25 @@ footer .contact-container a:hover {
 
   .wm-experience-container .wm-grid-row,
   .wm-plan-container .wm-grid-row,
-  .wm-exclusive-container .wm-grid-row {
+  .wm-exclusive-container .wm-grid-row,
+  .wm-staycation-container .wm-grid-row,
+  .wm-attractions-container .wm-grid-row,
+  .wm-delightful-container .wm-grid-row,
+  .wm-discover-container .wm-grid-row {
     grid-template-columns: auto;
   }
 
   .wm-experience-container .wm-info-box,
-  .wm-exclusive-container .wm-info-box {
+  .wm-exclusive-container .wm-info-box,
+  .wm-discover-container .wm-info-box,
+  .wm-staycation-container .wm-info-box{
     order: 2;
     padding-right: 0;
   }
 
-  .wm-plan-container .wm-info-box {
+  .wm-plan-container .wm-info-box,
+  .wm-delightful-container .wm-info-box,
+  .wm-attractions-container .wm-info-box {
     padding-left: 0;
   }
 
@@ -701,6 +801,15 @@ footer .contact-container a:hover {
 
   .wm-prices-container .wm-price-table {
     margin-bottom: 25px;
+  }
+
+  .experiences .wm-banner  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .experiences .wm-banner h1 { 
+    font-size: 3rem;
   }
 
   footer .wm-grid-row-3 {
