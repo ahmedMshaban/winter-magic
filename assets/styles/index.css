@@ -187,6 +187,29 @@ img {
   grid-column-gap: 20px;
   overflow-wrap: anywhere;
 }
+
+.button {
+  border: 1px solid #000;
+  line-height: 40px;
+  border-radius: 4px;
+  padding: 0 1em;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn-inverse:hover {
+  color: #fff;
+  background: #000;
+}
+
+.wm-info-box h2 {
+  margin-bottom: 15px;
+}
+
+.wm-info-box .button {
+  margin-top: 25px;
+  padding: 0.25em 3em;
+}
 /* 
     Header
 */
@@ -208,7 +231,6 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eaeaea;
-  margin-bottom: 10px;
 }
 
 .wm-main-header-wrap .wm-logo {
@@ -263,6 +285,167 @@ img {
 .wm-mobile-menu,
 .wm-main-nav .toggle-icon {
   display: none;
+}
+
+/* 
+    Home - Banner
+*/
+.home .wm-banner {
+  background: url(/assets/images/8.-Ice-rink.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+
+.home .wm-banner h1 {
+  font-size: 3.5rem;
+}
+
+.home .wm-banner p {
+  font-size: 1.5rem;
+}
+
+.home .wm-banner h1,
+.home .wm-banner p {
+  color: #fff;
+  text-shadow: #000 1px 1px 0;
+}
+
+.home .wm-banner a {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.home .wm-banner a:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.home .wm-banner .wm-info-box {
+  width: 500px;
+  max-width: 100%;
+  padding: 11% 0;
+}
+
+/* 
+    Home - Year-round 
+*/
+.wm-year-round-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  width: 700px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+    Home - Start Journey
+*/
+.wm-start-Journey-container {
+  background: #f2f2f2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-start-Journey-container .wm-section-header {
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.wm-prices-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  grid-column-gap: 20px;
+  overflow-wrap: anywhere;
+}
+
+.wm-prices-container .wm-price-table {
+  background: #fff;
+  border-radius: 20px;
+}
+
+.wm-prices-container .wm-price-table:hover {
+  box-shadow: 0 5px 20px 0px rgba(88, 42, 212, 0.15);
+  transform: translateY(-1px);
+}
+
+.wm-prices-container .wm-price-table h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.wm-prices-container .wm-price {
+  display: block;
+  background-color: #c4c4c4;
+  border-radius: 20px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.wm-prices-container .wm-price span {
+  font-size: 1.6rem;
+}
+
+.wm-prices-container ul {
+  list-style: disc;
+  margin: 30px 50px; 
+}
+
+/* 
+    Home - Experience 
+*/
+.wm-experience-container img {
+  border-radius: 20px;
+}
+
+.wm-experience-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-experience-container .wm-info-box {
+  padding-right: 10%;
+}
+
+/* 
+    Home - Plan 
+*/
+.wm-plan-container {
+  background-color: #f2f2f2;
+}
+
+.wm-plan-container img {
+  border-radius: 20px;
+}
+
+.wm-plan-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-plan-container .wm-info-box {
+  padding-left: 10%;
+}
+
+/* 
+    Home - Exclusive 
+*/
+.wm-exclusive-container img {
+  border-radius: 20px;
+}
+
+.wm-exclusive-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-exclusive-container .wm-info-box {
+  padding-right: 10%;
 }
 
 /* 
@@ -470,6 +653,35 @@ footer .contact-container a:hover {
     margin-left: 1em;
   }
 
+  .wm-experience-container,
+  .wm-plan-container,
+  .wm-exclusive-container,
+  .wm-year-round-container,
+  .wm-start-Journey-container  {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .wm-start-Journey-container .wm-section-header {
+    margin-bottom: 30px;
+  }
+
+  .wm-experience-container .wm-grid-row,
+  .wm-plan-container .wm-grid-row,
+  .wm-exclusive-container .wm-grid-row {
+    grid-template-columns: auto;
+  }
+
+  .wm-experience-container .wm-info-box,
+  .wm-exclusive-container .wm-info-box {
+    order: 2;
+    padding-right: 0;
+  }
+
+  .wm-plan-container .wm-info-box {
+    padding-left: 0;
+  }
+
   .wm-signup-container .wm-grid-row {
     grid-template-columns: auto;
   }
@@ -481,6 +693,14 @@ footer .contact-container a:hover {
   .wm-signup-container form {
     margin-right: auto;
     margin-top: 30px;
+  }
+
+  .wm-prices-container {
+    grid-template-columns: auto;
+  }
+
+  .wm-prices-container .wm-price-table {
+    margin-bottom: 25px;
   }
 
   footer .wm-grid-row-3 {

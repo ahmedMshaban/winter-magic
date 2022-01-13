@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/styles/index.css" />
   </head>
   <!-- Body Section Start Which Contains All the content we can see on the browser -->
-  <body>
+  <body class="home">
     <!--Header Tag is used to define the header of the page-->
     <header>
       <!--Above header-->
@@ -67,7 +67,9 @@
                 <li><a href="./experiences.html">Experiences</a></li>
                 <li><a href="./help.html">Help</a></li>
                 <!-- a link with # means this link is target specific part of the page -->
-                <li><a href="#tickets" class="button">Book Now</a></li>
+                <li>
+                  <a href="#tickets" class="button btn-inverse">Book Now</a>
+                </li>
 
                 <a
                   href="javascript:void(0);"
@@ -102,23 +104,25 @@
     <!-- main tag reefers to the main content of the page  -->
     <main>
       <!-- section tag defines section in a web page -->
-      <section>
-        <div>
-          <!-- h1 tag is big heading there are other headings too from h1 .... h6  -->
-          <h1>Make Plans For 2022</h1>
-          <!--p tag means paragraph-->
-          <p>
-            Come explore new adventures. Discover a world of surprises. And
-            create memories you will remember forever.
-          </p>
-          <!-- a link with # means this link is target specific part of the page -->
-          <a href="#tickets">Book Now</a>
+      <section class="wm-banner">
+        <div class="wm-container">
+          <div class="wm-info-box">
+            <!-- h1 tag is big heading there are other headings too from h1 .... h6  -->
+            <h1>Make Plans For 2022</h1>
+            <!--p tag means paragraph-->
+            <p>
+              Come explore new adventures. Discover a world of surprises. And
+              create memories you will remember forever.
+            </p>
+            <!-- a link with # means this link is target specific part of the page -->
+            <a href="#tickets" class="button btn-primary">Book Now</a>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section class="wm-year-round-container">
         <!-- section tag defines section in a web page -->
-        <div>
+        <div class="wm-container">
           <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
           <h2>A Year-Round Winter Wonderland</h2>
           <!--p tag means paragraph-->
@@ -129,24 +133,26 @@
         </div>
       </section>
 
-      <section>
+      <section class="wm-start-Journey-container">
         <!-- section tag defines section in a web page -->
-        <div>
-          <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
-          <!-- id can be assigned to any tag id is always unique for each item -->
-          <h2 id="tickets">Start Your Journey Now</h2>
-          <!--p tag means paragraph-->
-          <p>
-            Customize your adventure with the benefits that work best for you!
-          </p>
+        <div class="wm-container">
+          <div class="wm-section-header">
+            <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
+            <!-- id can be assigned to any tag id is always unique for each item -->
+            <h2 id="tickets">Start Your Journey Now</h2>
+            <!--p tag means paragraph-->
+            <p>
+              Customize your adventure with the benefits that work best for you!
+            </p>
+          </div>
           <!--Prices container-->
-          <div>
+          <div class="wm-prices-container">
             <!-- article tag is used to add content in the section/page -->
-            <article>
+            <article class="wm-price-table">
               <!-- h3 tag is heading -->
               <h3>Day Tickets</h3>
               <!-- span tag is inline container  -->
-              <p>Per Person: <span>$30</span></p>
+              <p class="wm-price">Per Person: <span>$30</span></p>
               <ul>
                 <li>Includes loads of festive fun</li>
                 <li>Over 25 rides and attractions</li>
@@ -155,9 +161,9 @@
                 <li>Free Parking</li>
               </ul>
             </article>
-            <article>
+            <article class="wm-price-table">
               <h3>Group Tickets</h3>
-              <p>Per Group: <span>$90</span></p>
+              <p class="wm-price">Per Group: <span>$90</span></p>
               <ul>
                 <li>Includes loads of festive fun</li>
                 <li>Over 25 rides and attractions</li>
@@ -166,9 +172,9 @@
                 <li>Free Parking</li>
               </ul>
             </article>
-            <article>
+            <article class="wm-price-table">
               <h3>Annual Pass</h3>
-              <p>Per Person: <span>$110</span></p>
+              <p class="wm-price">Per Person: <span>$110</span></p>
               <ul>
                 <li>Includes loads of festive fun</li>
                 <li>Over 25 rides and attractions</li>
@@ -181,65 +187,75 @@
         </div>
       </section>
 
-      <section>
+      <section class="wm-experience-container">
         <!--Content container-->
-        <div>
-          <div>
-            <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
-            <h2>Ice Themed Worlds For All Ages!</h2>
-            <!--p tag means paragraph-->
-            <p>
-              Explore architectural marvels made entirely of snow and finish
-              your tour at the Ice Bar with a delicious drinks served in a glass
-              made of ice.
-            </p>
-            <a href="./experiences.html">Experience</a>
-          </div>
-          <div>
-            <img src="./assets/images/6.-Ice-hotel.jpg" alt="" />
+        <div class="wm-container">
+          <div class="wm-grid-row">
+            <div class="wm-info-box">
+              <!-- h2 tag is heading there are other headings too from h1 .... h6  -->
+              <h2>Ice Themed Worlds For All Ages!</h2>
+              <!--p tag means paragraph-->
+              <p>
+                Explore architectural marvels made entirely of snow and finish
+                your tour at the Ice Bar with a delicious drinks served in a
+                glass made of ice.
+              </p>
+              <a href="./experiences.html" class="button btn-inverse"
+                >Experience</a
+              >
+            </div>
+            <div>
+              <img src="./assets/images/6.-Ice-hotel.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="wm-plan-container">
         <!--Content container-->
-        <div>
-          <div>
-            <h2>Plan Your Visit Now</h2>
-            <p>
-              Whatever the season, there is an extraordinary experience awaiting
-              anyone who visits. A new set of treasured memories are waiting to
-              unfold.
-            </p>
-            <a href="./experiences.html">More</a>
-          </div>
-          <div>
-            <img
-              src="./assets/images/3.-Ice-hotel.jpg"
-              alt="Ice Hotel In Theme Park"
-            />
+        <div class="wm-container">
+          <div class="wm-grid-row">
+            <div>
+              <img
+                src="./assets/images/3.-Ice-hotel.jpg"
+                alt="Ice Hotel In Theme Park"
+              />
+            </div>
+            <div class="wm-info-box">
+              <h2>Plan Your Visit Now</h2>
+              <p>
+                Whatever the season, there is an extraordinary experience
+                awaiting anyone who visits. A new set of treasured memories are
+                waiting to unfold.
+              </p>
+              <a href="./experiences.html" class="button btn-inverse">More</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <section>
+      <section class="wm-exclusive-container">
         <!--Content container-->
-        <div>
-          <div>
-            <h2>Exclusive Excess</h2>
-            <p>
-              Discover Winter Magic with your very own VIP Guide. Enjoy a
-              personalised visit filled with special perks and privileged
-              access.
-              <a href="./experiences.html">Find Out More</a>
-            </p>
-          </div>
+        <div class="wm-container">
+          <div class="wm-grid-row">
+            <div class="wm-info-box">
+              <h2>Exclusive Excess</h2>
+              <p>
+                Discover Winter Magic with your very own VIP Guide. Enjoy a
+                personalised visit filled with special perks and privileged
+                access.
+                <a href="./experiences.html" class="button btn-inverse"
+                  >Find Out More</a
+                >
+              </p>
+            </div>
 
-          <div>
-            <img
-              src="./assets/images/1.-Ice-hotel.jpg"
-              alt="Theme Park Ice Hotel"
-            />
+            <div>
+              <img
+                src="./assets/images/1.-Ice-hotel.jpg"
+                alt="Theme Park Ice Hotel"
+              />
+            </div>
           </div>
         </div>
       </section>
