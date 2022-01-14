@@ -19,7 +19,7 @@
     />
   </head>
   <!-- Body Section Start Which Contains All the content we can see on the browser -->
-  <body>
+  <body class="help">
     <!--Header Tag is used to define the header of the page-->
     <header>
       <!--Above header-->
@@ -67,7 +67,9 @@
                 <li><a href="./experiences.html">Experiences</a></li>
                 <li><a href="./help.html">Help</a></li>
                 <!-- a link with # means this link is target specific part of the page -->
-                <li><a href="#tickets" class="button btn-inverse">Book Now</a></li>
+                <li>
+                  <a href="#tickets" class="button btn-inverse">Book Now</a>
+                </li>
 
                 <a
                   href="javascript:void(0);"
@@ -101,113 +103,115 @@
 
     <main>
       <!-- Hero banner -->
-      <section>
+      <section class="wm-banner">
         <!--Content container-->
-        <div>
+        <div class="wm-container">
           <!-- Heading After heading -->
           <h1>Before You Arrive</h1>
           <!-- Paragraph After Header -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            At Winter Magic, we are committed to providing an amazing experience
+            for all of our guests. Check our ticket availabilites and workshop
+            dates here.
           </p>
         </div>
       </section>
 
-      <section>
+      <section class="wm-book-container">
         <!--Content container-->
-        <div>
-          <div>
-            <!-- Time Schedule  -->
-            <p>Today is: <span>14th October 2021</span></p>
-            <p>Park is <span>Open</span></p>
-            <h2>Opening Hours</h2>
-            <p>10am - 10pm</p>
-            <span>(Last Ride at 6pm)</span>
-            <div>
-              <span></span>
-              <p>Tickets Available</p>
+        <div class="wm-container">
+          <div class="wm-grid-row">
+            <div class="wm-info-box">
+              <!-- Time Schedule  -->
+              <p class="today-date">Today is: <span>14th October 2021</span></p>
+              <p class="open">Park is <span>Open</span></p>
+              <h2 class="hours-title">Opening Hours</h2>
+              <p class="hours">10am - 10pm</p>
+              <span>(Last Ride at 6pm)</span>
+              <p class="ticket-available">Tickets Available</p>
+              <p class="ticket-soldout">Tickets Sold Out</p>
+              <p class="ticket-workshops">Workshops</p>
             </div>
             <div>
-              <span></span>
-              <p>Tickets Sold Out</p>
+              <img src="assets/images/calendar.png" alt="calendar" />
             </div>
-          </div>
-          <div>
-            <!-- Form To Get Date From User -->
-            <form>
-              <label for="parkcleander">Park cleander:</label>
-              <input id="parkcleander" type="date" name="parkcleander" />
-            </form>
           </div>
         </div>
       </section>
     </main>
 
-    <section>
+    <section class="wm-map-container">
       <!--Content container-->
-      <div>
-        <div>
-          <!-- External Resources Embedded Using iframe -->
-          <!-- Google Maps Embed -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.015266976273!2d-122.39229728430682!3d37.789681979756644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806415f06bdf%3A0xf048a8b5bd7b0cf3!2sGoogle%20San%20Francisco!5e0!3m2!1sen!2str!4v1640457138690!5m2!1sen!2str"
-            width="600"
-            height="450"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
-        </div>
-        <div>
-          <!-- Directions Heading -->
-          <h2>Directions</h2>
-          <!-- Paragraph About Location -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <!-- Link To Google Maps -->
-          <a
-            href="https://www.google.com/maps/place/Google+San+Francisco/@37.789682,-122.3922973,17z/data=!3m1!4b1!4m5!3m4!1s0x8085806415f06bdf:0xf048a8b5bd7b0cf3!8m2!3d37.789682!4d-122.3901086"
-            target="_blank"
-            >Open in Google Maps</a
-          >
+      <div class="wm-container">
+        <div class="wm-grid-row">
+          <div>
+            <!-- External Resources Embedded Using iframe -->
+            <!-- Google Maps Embed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.015266976273!2d-122.39229728430682!3d37.789681979756644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085806415f06bdf%3A0xf048a8b5bd7b0cf3!2sGoogle%20San%20Francisco!5e0!3m2!1sen!2str!4v1640457138690!5m2!1sen!2str"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="wm-info-box">
+            <!-- Directions Heading -->
+            <h2>Directions</h2>
+            <!-- Paragraph About Location -->
+            <p>
+              Getting to the Winter Magic really couldn't be easier as we are
+              accessible via various transportation such as train, bus or any
+              private vehicles.
+            </p>
+            <!-- Link To Google Maps -->
+            <a
+              href="https://www.google.com/maps/place/Google+San+Francisco/@37.789682,-122.3922973,17z/data=!3m1!4b1!4m5!3m4!1s0x8085806415f06bdf:0xf048a8b5bd7b0cf3!8m2!3d37.789682!4d-122.3901086"
+              target="_blank"
+              class="button btn-inverse"
+              >Open in Google Maps</a
+            >
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="wm-acccesibility-container">
       <!--Content container-->
-      <div>
-        <div>
-          <img
-            src="./assets/images/8.-Ice-hotel.jpg"
-            alt="Ice Hotel Theme Park"
-          />
-          <h2>Accesibility</h2>
-          <p>
-            The following guidance and information has been created in order to
-            help guests with additional needs have a fabulous and unforgettable
-            experience at the Resort!
-          </p>
-        </div>
-        <div>
-          <ul>
-            <!-- Images Inside List With Text -->
-            <li>
-              <img src="assets/images/tickCircle.svg" alt="" /> We're providing
-              information to guests before they visit
-            </li>
-            <li>
-              <img src="assets/images/tickCircle.svg" alt="" /> Ensuring that
-              purchasing tickets and entering the Park is as smooth as possible
-            </li>
-            <li>
-              <img src="assets/images/tickCircle.svg" alt="" />Reviewing our
-              ride accessibility policies
-            </li>
-          </ul>
+      <div class="wm-container">
+        <div class="wm-grid-row">
+          <div>
+            <img
+              src="./assets/images/8.-Ice-hotel.jpg"
+              alt="Ice Hotel Theme Park"
+              class="slide-left"
+            />
+            <h2>Accesibility</h2>
+            <p>
+              The following guidance and information has been created in order
+              to help guests with additional needs have a fabulous and
+              unforgettable experience at the Resort!
+            </p>
+          </div>
+          <div>
+            <ul>
+              <!-- Images Inside List With Text -->
+              <li>
+                <img src="assets/images/tickCircle.svg" alt="" /> We're
+                providing information to guests before they visit
+              </li>
+              <li>
+                <img src="assets/images/tickCircle.svg" alt="" /> Ensuring that
+                purchasing tickets and entering the Park is as smooth as
+                possible
+              </li>
+              <li>
+                <img src="assets/images/tickCircle.svg" alt="" />Reviewing our
+                ride accessibility policies
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -279,7 +283,7 @@
       </div>
     </footer>
     <!-- End of footer -->
-    
+
     <script src="assets/scripts/index.js"></script>
   </body>
 </html>

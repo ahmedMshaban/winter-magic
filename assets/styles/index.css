@@ -136,6 +136,68 @@ table {
   border-spacing: 0;
 }
 
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-right
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(100px);
+    transform: translateX(100px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slide-left {
+  -webkit-animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-right {
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 /* 
     Global
 */
@@ -160,7 +222,8 @@ a {
 }
 
 body p,
-body a {
+body a,
+body li {
   font-size: 1.25rem;
 }
 
@@ -393,7 +456,7 @@ img {
 
 .wm-prices-container ul {
   list-style: disc;
-  margin: 30px 50px; 
+  margin: 30px 50px;
 }
 
 /* 
@@ -498,12 +561,11 @@ input:focus {
   margin-left: auto;
 }
 
-
 /* 
     Experiences - Banner
 */
 .experiences .wm-banner {
-  background: #F2F2F2;
+  background: #f2f2f2;
   text-align: center;
   padding: 4% 0 5%;
 }
@@ -586,6 +648,150 @@ input:focus {
   padding-right: 10%;
 }
 
+/* 
+    Help - Banner
+*/
+.help .wm-banner {
+  text-align: center;
+  padding: 4% 0 5%;
+}
+
+.help .wm-banner p {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 
+    Help - Book
+*/
+.wm-book-container {
+  background-color: #f2f2f2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-book-container .wm-grid-row {
+  grid-template-columns: 450px 475px;
+  grid-column-gap: 50px;
+  justify-content: center;
+}
+
+.wm-book-container .wm-info-box {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 50px;
+}
+
+.wm-book-container .today-date span {
+  font-weight: bold;
+}
+
+.wm-book-container .open {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.wm-book-container .open span {
+  color: green;
+}
+
+.wm-book-container .hours-title {
+  font-size: 1.5rem;
+}
+
+.wm-book-container .hours {
+  font-weight: bold;
+}
+
+.ticket-available,
+.ticket-soldout,
+.ticket-workshops {
+  margin-top: 20px;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.ticket-available:before,
+.ticket-soldout:before,
+.ticket-workshops:before {
+  content: "";
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.ticket-available:before {
+  background: #589c5f;
+}
+
+.ticket-soldout:before {
+  background: #d45b5b;
+}
+
+.ticket-workshops:before {
+  background: #85c7ec;
+}
+
+/* 
+    Help - Map
+*/
+.wm-map-container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-map-container .wm-grid-row {
+  grid-template-columns: 65% auto;
+  grid-column-gap: 50px;
+}
+
+.wm-map-container iframe {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* 
+    Help - Acccesibility
+*/
+.wm-acccesibility-container {
+  background-color: #f2f2f2;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.wm-acccesibility-container .wm-grid-row {
+  grid-template-columns: auto auto;
+  grid-column-gap: 50px;
+}
+
+.wm-acccesibility-container h2 {
+  margin-top: 50px;
+}
+
+.wm-acccesibility-container img {
+  border-radius: 20px;
+}
+
+.wm-acccesibility-container li {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.wm-acccesibility-container li img {
+  margin-right: 25px;
+}
 /* 
     Footer
 */
@@ -749,7 +955,10 @@ footer .contact-container a:hover {
   .wm-staycation-container,
   .wm-attractions-container,
   .wm-delightful-container,
-  .wm-discover-container  {
+  .wm-discover-container,
+  .wm-book-container,
+  .wm-map-container,
+  .wm-acccesibility-container {
     padding-top: 50px;
     padding-bottom: 50px;
   }
@@ -764,14 +973,30 @@ footer .contact-container a:hover {
   .wm-staycation-container .wm-grid-row,
   .wm-attractions-container .wm-grid-row,
   .wm-delightful-container .wm-grid-row,
-  .wm-discover-container .wm-grid-row {
+  .wm-discover-container .wm-grid-row,
+  .wm-book-container .wm-grid-row,
+  .wm-map-container .wm-grid-row,
+  .wm-acccesibility-container .wm-grid-row {
     grid-template-columns: auto;
+  }
+
+  .wm-acccesibility-container h2,
+  .wm-acccesibility-container ul {
+    margin-top: 20px;
+  }
+
+  .wm-book-container .wm-grid-row .wm-info-box {
+    margin-bottom: 25px;
+  }
+
+  .wm-map-container .wm-info-box {
+    order: 0;
   }
 
   .wm-experience-container .wm-info-box,
   .wm-exclusive-container .wm-info-box,
   .wm-discover-container .wm-info-box,
-  .wm-staycation-container .wm-info-box{
+  .wm-staycation-container .wm-info-box {
     order: 2;
     padding-right: 0;
   }
@@ -803,12 +1028,14 @@ footer .contact-container a:hover {
     margin-bottom: 25px;
   }
 
-  .experiences .wm-banner  {
+  .experiences .wm-banner,
+  .help .wm-banner {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
-  .experiences .wm-banner h1 { 
+  .experiences .wm-banner h1,
+  .help .wm-banner h1 {
     font-size: 3rem;
   }
 
