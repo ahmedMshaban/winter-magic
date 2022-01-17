@@ -924,6 +924,7 @@ footer .contact-container a:hover {
   }
 
   .wm-mobile-menu.responsive,
+  .wm-main-nav li.toggle-icon-container,
   .wm-main-nav .toggle-icon {
     display: block;
   }
